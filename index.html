@@ -9,19 +9,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="manifest" href="./img/manifest.json">
-        <link rel="icon" href="/img/radio.png">
+        <link rel="icon" href="/img/logo.jpeg">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
 
     <body>
+
+        <!-- 
+        NOTAAAA: Se ven horribles las imágenes de los logos así, pero por si quieren otro 
+        lo quitamos y yap o acomodamos ese, es para que tengamos una idea de en dónde irían :) 
+        -->
+
+        <!-- Holi, soy la etiqueta del navbar para cada sección -->
+        <main-navbar></main-navbar>
+
         <main class="container">
             <h1>Pascual Stereo FM</h1>
 
             <select id="emisoras" onchange="cambiarEmisora(this)" class="form-select" aria-label="Default select example">
                 <option value="" selected>Selecciona una emisora...</option>
-                <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/BESAME_MEDELLIN.mp3">Bésame Medellín</option>
-                <option value="https://27353.live.streamtheworld.com/RT_MEDELLINAAC.aac">Radio Tiempo</option>
-                <option value="http://tupanel.info:8000/stream?sid=1">La X Medellín</option>
+                <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/BESAME_MEDELLIN.mp3">Bésame Medellín (94.9 FM)</option>
+                <option value="https://27353.live.streamtheworld.com/RT_MEDELLINAAC.aac">Radio Tiempo (105.9 FM)</option>
+                <option value="http://tupanel.info:8000/stream?sid=1">La X Medellín (103.9 FM)</option>
             </select>
 
             <i id="signal" class="fa-solid fa-signal"></i>
@@ -44,9 +53,10 @@
             <audio id="emisora" autoplay style="display: none;">
                 <source src="">
             </audio>
-
         </main>
 
+        <!-- Hay que llamar el script de cada componente siempre ;) -->
+        <script src="/components/navbar-component.js"></script>
         <script src="./js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
