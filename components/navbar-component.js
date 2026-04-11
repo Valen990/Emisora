@@ -157,7 +157,7 @@ class Navbar extends HTMLElement {
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
