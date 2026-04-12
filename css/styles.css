@@ -125,7 +125,6 @@ h1 {
 }
 
 .contenedorTiOyentes {
-    /* min-height: 50px; */
     display: flex;
     align-items: center;
     margin-top: 2rem;
