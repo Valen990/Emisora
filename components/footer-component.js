@@ -25,6 +25,7 @@ constructor() {
 
             .footer{
                 position: relative;
+                bottom: 0;
                 width: 100%;
                 background: #49144C;
                 min-height: 100px;
@@ -33,7 +34,7 @@ constructor() {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 30px;
+                margin-top: 20px;
             }
 
             .social-icons{
@@ -95,8 +96,7 @@ constructor() {
                 text-align: center;
                 margin-top: 15px;
                 margin-bottom: 10px;
-                font-size: 0.5
-                rem;
+                font-size: 0.8rem;
             }
         </style>
         <footer class="footer">
