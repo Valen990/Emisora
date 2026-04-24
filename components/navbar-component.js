@@ -154,7 +154,7 @@ class Navbar extends HTMLElement {
           </a>
           
           <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Proyectos</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
