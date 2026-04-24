@@ -150,14 +150,14 @@ class Navbar extends HTMLElement {
       <nav class="navbar">
         <div class="container">
           <a href="index.html" class="logo">
-            <img src="/img/logo.jpeg" alt="Logo" class="nav-logo-img">
+            <img src="/img/logoNavbar.png" alt="Logo" class="nav-logo-img">
           </a>
           
           <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>

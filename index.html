@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pascual Stereo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascual Stereo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="manifest" href="./img/manifest.json">
-        <link rel="icon" href="/img/logo.jpeg">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="manifest" href="./img/manifest.json">
+    <link rel="icon" href="/img/logoNavbar.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-    <body>
+<body>
 
-        <!-- 
+    <!-- 
         NOTAAAA: Se ven horribles las imágenes de los logos así, pero por si quieren otro 
         lo quitamos y yap o acomodamos ese, es para que tengamos una idea de en dónde irían :) 
         -->
 
-        <!-- Holi, soy la etiqueta del navbar para cada sección -->
-        <main-navbar></main-navbar>
+    <!-- Holi, soy la etiqueta del navbar para cada sección -->
+    <main-navbar></main-navbar>
 
-        <main class="container">
-            <h1>Pascual Stereo FM</h1>
+    <main class="container">
+        <h1>Pascual Stereo FM</h1>
 
-            <select id="emisoras" onchange="cambiarEmisora(this)" class="form-select" aria-label="Default select example">
-                <option value="" selected>Selecciona una emisora...</option>
-                <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/BESAME_MEDELLIN.mp3">Bésame Medellín (94.9 FM)</option>
-                <option value="https://27353.live.streamtheworld.com/RT_MEDELLINAAC.aac">Radio Tiempo (105.9 FM)</option>
-                <option value="http://tupanel.info:8000/stream?sid=1">La X Medellín (103.9 FM)</option>
-            </select>
+        <select id="emisoras" onchange="cambiarEmisora(this)" class="form-select" aria-label="Default select example">
+            <option value="" selected>Selecciona una emisora...</option>
+            <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/BESAME_MEDELLIN.mp3">Bésame
+                Medellín (94.9 FM)</option>
+            <option value="https://27353.live.streamtheworld.com/RT_MEDELLINAAC.aac">Radio Tiempo (105.9 FM)</option>
+            <option value="http://tupanel.info:8000/stream?sid=1">La X Medellín (103.9 FM)</option>
+        </select>
 
-            <i id="signal" class="fa-solid fa-signal"></i>
+        <i id="signal" class="fa-solid fa-signal"></i>
 
-            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button onclick="reproducir()" id="reproducir" type="button" class="btn btn-danger">
-                    <i class="fa-solid fa-play"></i>
-                </button>
-                <button onclick="pausar()" id="pausar" type="button" class="btn btn-warning">
-                    <i class="fa-solid fa-pause"></i>
-                </button>
-                <button onclick="parar()" id="parar" type="button" class="btn btn-success">
-                    <i class="fa-solid fa-stop"></i>
-                </button>
-            </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button onclick="reproducir()" id="reproducir" type="button" class="btn btn-danger">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button onclick="pausar()" id="pausar" type="button" class="btn btn-warning">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button onclick="parar()" id="parar" type="button" class="btn btn-success">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+        </div>
 
-            <label for="range1" class="form-label">Volume</label>
-            <input onchange="controlarVolume(this)" id="volume" type="range" class="form-range" min="0" max="100" id="range1">
+        <label for="range1" class="form-label">Volumen</label>
+        <input onchange="controlarVolume(this)" id="volume" type="range" class="form-range" min="0" max="100"
+            id="range1">
 
+<<<<<<< HEAD
             <audio id="emisora" autoplay style="display: none;">
                 <source src="">
             </audio>
@@ -75,5 +80,78 @@
         <!-- cierran comentario del footer -->
         
     </body>
+=======
+        <audio id="emisora" autoplay style="display: none;">
+            <source src="">
+        </audio>
+    </main>
+    <div class="contenedorTiOyentes">
+        <span>¡Oyentes diarios!</span>
+    </div>
+>>>>>>> a5724558f29df133d1551a5dd947d77371229abb
     
+    <section class="estadisticas">
+        
+            <!-- Tarjeta 1 -->
+            <article class="porcentaje">
+                <div class="iconoEmisora">
+                    <img src="./img/besame.png" alt="Bésame">
+                </div>
+                <div class="info">
+                    <h3>En sintonía</h3>
+                    <p class="numero">90%</p>
+                    <div class="barraProgreso">
+                        <div class="progreso" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </article>
+            <!-- Tarjeta 2 -->
+            <article class="porcentaje">
+                <div class="iconoEmisora">
+                    <img src="./img/RadioTiempo.svg" style="margin-top: 15px;" alt="Radio Tiempo">
+                </div>
+                <div class="info">
+                    <h3>En sintonía</h3>
+                    <p class="numero">75%</p>
+                    <div class="barraProgreso">
+                        <div class="progreso" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </article>
+            <!-- Tarjeta 3 -->
+            <article class="porcentaje">
+                <div class="iconoEmisora">
+                    <img src="./img/laX.png" alt="La X Medellín">
+                </div>
+                <div class="info">
+                    <h3>En sintonía</h3>
+                    <p class="numero">60%</p>
+                    <div class="barraProgreso">
+                        <div class="progreso" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </article>
+    </section>
+
+    <!-- aqui empieza el footer -->
+    <main-footer></main-footer>
+
+    <!-- Hay que llamar el script de cada componente siempre ;) -->
+    <script src="/components/navbar-component.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script script para el footer -->
+    <script src="components/footer-component.js"></script>
+    <!-- Script de los iconos del footer -->
+    <!-- NOTA IMPORTANTE: si van a usar el componente en otro archivo html por favor importen estos otros 2 scripts
+            porque sin ellos los iconos no van a aparecer D:>-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- cierran comentario del footer -->
+
+</body>
+
 </html>

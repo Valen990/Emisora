@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     /* Apila Navbar arriba y Contenido abajo */
     min-height: 100vh;
-    background: radial-gradient(circle at center, #661a5c 0%, #550583 100%); 
+    background: radial-gradient(circle at center, #661a5c 0%, #550583 100%);
     /*background-color: #49144C; No me gustaba tanto el color liso, pero lo pueden poner si quieren*/
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,6 +116,7 @@ h1 {
     opacity: 0.8;
 }
 
+<<<<<<< HEAD
 
 /*2. ESTILOS DEL LOGIN*/
 
@@ -310,4 +311,90 @@ h1 {
 
 .form-link:hover{
     text-decoration: none;
+=======
+.estadisticas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.contenedorTiOyentes {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+:root {
+    --sletras: 17;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #E3A2E6;
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 13ch;
+    margin: auto;
+
+    animation: typing 3s steps(var(--sletras));
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    };
+}
+
+.porcentaje {
+    background: #49144C;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+}
+
+.porcentaje:hover {
+    transform: translateY(-5px);
+}
+
+.iconoEmisora {
+    background-color: #360F38;
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.iconoEmisora img {
+    width: 70px;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #EEC7F0;
+}
+
+.numero {
+    color: #D87EDD;
+    margin: 5px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.barraProgreso {
+    width: 100%;
+    height: 8px;
+    background-color: #F9EBFA;
+    border-radius: 4px;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #D87EDD;
+    border-radius: 4px;
+>>>>>>> a5724558f29df133d1551a5dd947d77371229abb
 }
