@@ -116,7 +116,6 @@ h1 {
     opacity: 0.8;
 }
 
-<<<<<<< HEAD
 
 /*2. ESTILOS DEL LOGIN*/
 
@@ -311,7 +310,8 @@ h1 {
 
 .form-link:hover{
     text-decoration: none;
-=======
+}
+/*=======*/
 .estadisticas {
     display: flex;
     gap: 20px;
@@ -396,5 +396,5 @@ span {
     height: 100%;
     background-color: #D87EDD;
     border-radius: 4px;
->>>>>>> a5724558f29df133d1551a5dd947d77371229abb
+
 }
