@@ -1,0 +1,46 @@
+body{
+    background: radial-gradient(circle at center, #661a5c 0%, #550583 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+form{
+    background-color: #49144C;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.contact-section h2 {
+    font-weight: bold;
+    color: #EEC7F0; 
+}
+
+hr{
+    color: #F9EBFA;
+    border-width: 3px;
+    border-style:dotted; /*Línea intermitente*/
+}
+
+.contact-info {
+    border-radius: 15px;
+    background-color: #49144C;
+    margin-top: 20%;
+}
+
+h5, p{
+    color: #E3A2E6;
+    text-align: center;
+}
+
+.contact-info i {
+    color: #EEC7F0;
+}
+
+.contact-section .form-control {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-section button {
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+body{
+    background: radial-gradient(circle at center, #661a5c 0%, #550583 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.carousel-hero {
+    height: 70vh;
+    margin-top: 30px;
+}
+
+.carousel-hero .carousel-item {
+    height: 70vh;
+    position: relative;
+}
+
+.carousel-hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*Ajusta la imagen para que abarque todo el contenedor*/
+    object-position: center;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.7)
+    );
+}
+
+/* Texto del carrusel */
+.hero-content {
+    bottom: 15%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #EEC7F0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #F9EBFA;
+}
+
+/* Botones carrusel */
+.hero-content .btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+
+.info-section .card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.info-section h2{
+    text-align: center;
+    color: #EEC7F0;
+}
+
+.info-section .card:hover {
+    transform: translateY(-5px);
+}

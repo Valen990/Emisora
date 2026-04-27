@@ -155,11 +155,11 @@ class Navbar extends HTMLElement {
           
           <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
             <li><a href="#">Proyectos</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
 
           <div style="display: flex; align-items: center;">
